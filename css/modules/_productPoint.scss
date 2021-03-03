@@ -1,0 +1,87 @@
+// 商品説明
+
+
+// SMP/PCのレイアウト切り替えパターン 
+.productPoint {
+  &__img {
+    width: 100%;
+    &--title {
+      margin: 0 auto 10px;
+    }
+  }
+  &__list {
+    padding: 12px;
+  }
+  &__item {
+    margin-bottom: 12px;
+  }
+  &__text {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  &__button {
+    background-color: #b9c524;
+    padding: 10px 15px;
+    margin: 0px 10px 50px;
+    color: #fff;
+    border-radius: 7px;
+    width: calc(100% - 20px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    // ボタンタグ特有の表示を消す↓
+    border: none;
+    appearance: none;
+    border-bottom: solid 4px #99a30a;
+
+    &:active {
+      border-bottom: none;
+      transform: translateY(4px);
+      margin-bottom: 9px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    span {
+      margin-right: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .productPoint {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+
+    &__warp {
+      width: 50%;
+    }
+
+    &__img {
+      width: 50%;
+      // height: fit-content;
+      align-self: flex-start;
+      padding-bottom: 30px;
+      &--title {
+        max-width: 70%;
+      }
+    }
+    &__list {
+      // 要素をflex属性になる（デフォルト横並びになっちゃう）
+      display: flex;
+      // 縦並びにするCSS
+      flex-direction: column;
+      // 縦中央揃え
+      justify-content: center;
+      padding-left: 20px;
+      padding-top: 0px;
+    }
+  }
+}

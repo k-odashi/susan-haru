@@ -1,0 +1,1363 @@
+@charset "UTF-8";
+body {
+  font-family: "ヒラギノ角ゴシック", "Noto Sans JP", "游ゴシック体", YuGothic, Hiragino Sans, sans-serif;
+  color: #4c4948;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+}
+
+.header--sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav {
+  position: relative;
+  background-color: #fffde6;
+  font-weight: 500;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav__item {
+  margin: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__link {
+  color: #dd5253;
+  font-size: 15px;
+}
+
+.nav__link--icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 8px;
+  padding: 4px;
+}
+
+.nav__link--anchor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__logo {
+  width: 28px;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.hero__img--sp {
+  display: block;
+}
+
+.hero__img--pc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__img--sp {
+    display: none;
+  }
+  .hero__img--pc {
+    display: block;
+  }
+}
+
+.limit {
+  margin-top: 40px;
+}
+
+.limit__text {
+  color: #cb0000;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.limit__emphasis {
+  font-size: 30px;
+}
+
+.presentBanner {
+  margin: 0 20px 20px;
+}
+
+.presentBanner__img {
+  margin: 0px auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .presentBanner__img {
+    margin: 0px auto;
+    max-width: 50%;
+  }
+}
+
+.style-hidden {
+  display: none;
+}
+
+.font-professor {
+  font-family: professor, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.under-line {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #fbff5f));
+  background: linear-gradient(transparent 50%, #fbff5f 50%);
+}
+
+.ranking__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ranking__list {
+  background-color: #fcefd6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 16px;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.ranking__list:last-child::after {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 1px;
+  padding-right: 11px;
+}
+
+.ranking__item {
+  background-color: #FFF;
+  min-width: 220px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ranking__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ranking__labelItem {
+  background-color: #cb0000;
+  color: #fff;
+  font-size: 9px;
+  border-radius: 3px;
+  margin-right: 3px;
+  padding: 1px 3px;
+}
+
+.ranking__name {
+  font-size: 18px;
+  white-space: pre-wrap;
+  margin: 10px 0;
+  line-height: 1.3;
+}
+
+.ranking__detail {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.ranking__listPrice {
+  font-size: 12px;
+  color: #767676;
+  margin-bottom: 5px;
+}
+
+.ranking__listPrice s {
+  font-size: 23px;
+  color: #cb0000;
+}
+
+.ranking__discountPrice {
+  font-size: 15px;
+}
+
+.ranking__discountPrice span {
+  color: #cb0000;
+  font-size: 35px;
+}
+
+.ranking__saving {
+  font-size: 15px;
+  color: #cb0000;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .ranking__list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 16px auto;
+  }
+}
+
+.offer {
+  font-family: "游ゴシック体", YuGothic, Hiragino Sans, sans-serif;
+}
+
+.offer__title {
+  white-space: pre-line;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+}
+
+.offer__titleSlash::before {
+  content: "＼";
+}
+
+.offer__titleSlash::after {
+  content: "／";
+}
+
+.offer__titleEmphasis {
+  font-size: 24px;
+}
+
+.offer__wrap {
+  width: calc(100vw - 174px);
+}
+
+.offer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.offer__item--big {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.offer__item--big .offer__img {
+  width: 100%;
+  max-height: -webkit-min-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+
+.offer__item--big .offer__wrap {
+  width: 100%;
+}
+
+.offer__img {
+  width: 130px;
+  margin-right: 5px;
+  max-height: 170px;
+}
+
+.offer__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__labelItem {
+  background-color: #cb0000;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 3px;
+  margin-right: 3px;
+  padding: 2px 4px;
+}
+
+.offer__name {
+  font-size: 18px;
+  white-space: pre-wrap;
+  margin: 3px 0;
+  line-height: 1.3;
+}
+
+.offer__detail {
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+.offer__listPrice {
+  font-size: 12px;
+  color: #767676;
+  margin-bottom: 0px;
+}
+
+.offer__listPrice s {
+  font-size: 23px;
+  color: #cb0000;
+  font-weight: 500;
+}
+
+.offer__discountPrice {
+  font-size: 15px;
+}
+
+.offer__discountPriceValue {
+  color: #cb0000;
+  font-size: 35px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.offer__saving {
+  font-size: 15px;
+  color: #cb0000;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.offer__annotation {
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: justify;
+}
+
+.offer .offer__button {
+  background-color: #b9c524;
+  padding: 10px 15px;
+  margin: 10px 0 5px;
+  color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-bottom: solid 4px #99a30a;
+}
+
+.offer .offer__button:active {
+  border-bottom: none;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  margin-bottom: 9px;
+}
+
+.offer .offer__button:focus {
+  outline: none;
+}
+
+.offer .offer__button span {
+  margin-right: 12px;
+}
+
+.offer .offer__banner {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer .offer__item {
+    margin: 0 auto 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    max-width: 500px;
+  }
+  .offer .offer__item--big {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    max-width: 900px;
+  }
+  .offer .offer__item--big .offer__img {
+    max-width: 440px;
+  }
+  .offer .offer__img {
+    max-width: 250px;
+    height: auto;
+  }
+  .offer .offer__labelItem {
+    font-size: 15px;
+  }
+  .offer .offer__discountPriceValue {
+    font-size: 50px;
+  }
+  .offer .offer .button {
+    min-width: 425px;
+  }
+}
+
+.offer__accordion__contents {
+  margin: 10px 20px 5px;
+  text-align: justify;
+}
+
+.accordion4__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion4__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion4__input:checked ~ .accordion4__wrap {
+  height: auto;
+}
+
+.accordion4__input:checked ~ .accordion4__label::before {
+  content: "閉じる";
+}
+
+.accordion4__input:checked ~ .accordion4__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion4__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion4__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion4__label::before {
+  content: "商品の説明";
+  color: #dd5253;
+}
+
+.accordion4__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.offer__accordion__top {
+  margin: 20px auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer__accordion__top {
+    max-width: 70%;
+  }
+}
+
+.accordion4__label {
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.accordion5__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion5__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion5__input:checked ~ .accordion5__wrap {
+  height: auto;
+}
+
+.accordion5__input:checked ~ .accordion5__label::before {
+  content: "閉じる";
+}
+
+.accordion5__input:checked ~ .accordion5__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion5__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion5__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion5__label::before {
+  content: "商品の説明";
+  color: #dd5253;
+}
+
+.accordion5__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.offer__accordion__top {
+  margin: 20px auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer__accordion__top {
+    max-width: 70%;
+  }
+}
+
+.accordion5__label {
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.accordion6__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion6__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion6__input:checked ~ .accordion6__wrap {
+  height: auto;
+}
+
+.accordion6__input:checked ~ .accordion6__label::before {
+  content: "閉じる";
+}
+
+.accordion6__input:checked ~ .accordion6__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion6__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion6__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion6__label::before {
+  content: "商品の説明";
+  color: #dd5253;
+}
+
+.accordion6__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.offer__accordion__top {
+  margin: 20px auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer__accordion__top {
+    max-width: 70%;
+  }
+}
+
+.accordion6__label {
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.accordion7__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion7__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion7__input:checked ~ .accordion7__wrap {
+  height: auto;
+}
+
+.accordion7__input:checked ~ .accordion7__label::before {
+  content: "閉じる";
+}
+
+.accordion7__input:checked ~ .accordion7__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion7__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion7__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion7__label::before {
+  content: "商品の説明";
+  color: #dd5253;
+}
+
+.accordion7__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.offer__accordion__top {
+  margin: 20px auto;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .offer__accordion__top {
+    max-width: 70%;
+  }
+}
+
+.accordion7__label {
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.secret {
+  width: 300px;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}
+
+.secret__contents {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.secret__img {
+  margin-bottom: 20px;
+}
+
+.accordion1__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion1__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion1__input:checked ~ .accordion1__wrap {
+  height: auto;
+}
+
+.accordion1__input:checked ~ .accordion1__label::before {
+  content: "閉じる";
+}
+
+.accordion1__input:checked ~ .accordion1__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion1__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion1__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion1__label::before {
+  content: "大切な３つのケアって？";
+  color: #dd5253;
+}
+
+.accordion1__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion2__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion2__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion2__input:checked ~ .accordion2__wrap {
+  height: auto;
+}
+
+.accordion2__input:checked ~ .accordion2__label::before {
+  content: "閉じる";
+}
+
+.accordion2__input:checked ~ .accordion2__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion2__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion2__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion2__label::before {
+  content: "毎日無理なく続けられる";
+  color: #dd5253;
+}
+
+.accordion2__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion3__input {
+  display: none;
+  /* inputタグがチェック状態になるとactiveになる */
+}
+
+.accordion3__input:checked {
+  /* 【「~」の説明】
+      「~」の意味は、後ろにある同じ階層の要素
+      今回だと、[accordion__input]がcheckedの状態の時、
+      同じ階層で、後ろにある[accordion__wrap]と
+      [accordion__label]にCSSを効かせることができる。
+
+      Q：「~」が無かったらどうなる？
+      A：無い時の書き方は、↓のようになるが、
+      [accordion__input]の一階層下にCSSを効かせる。
+      という意味になってしまう。
+        -    &:checked{
+        -        .accordion__wrap{             
+      */
+}
+
+.accordion3__input:checked ~ .accordion3__wrap {
+  height: auto;
+}
+
+.accordion3__input:checked ~ .accordion3__label::before {
+  content: "閉じる";
+}
+
+.accordion3__input:checked ~ .accordion3__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f068";
+  /* font awesomeアイコンを使いたい時
+            https://fontawesome.com/icons/times?style=solid
+            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
+            font-familyも指定する必要あり。
+            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
+          */
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion3__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion3__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid;
+  border-color: #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  margin-bottom: 10px;
+}
+
+.accordion3__label::before {
+  content: "泡のこだわり";
+  color: #dd5253;
+}
+
+.accordion3__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+@media screen and (min-width: 768px) {
+  .secret {
+    width: 600px;
+  }
+}
+
+.productPoint__img {
+  width: 100%;
+}
+
+.productPoint__img--title {
+  margin: 0 auto 10px;
+}
+
+.productPoint__list {
+  padding: 12px;
+}
+
+.productPoint__item {
+  margin-bottom: 12px;
+}
+
+.productPoint__text {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.productPoint__button {
+  background-color: #b9c524;
+  padding: 10px 15px;
+  margin: 0px 10px 50px;
+  color: #fff;
+  border-radius: 7px;
+  width: calc(100% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-bottom: solid 4px #99a30a;
+}
+
+.productPoint__button:active {
+  border-bottom: none;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  margin-bottom: 9px;
+}
+
+.productPoint__button:focus {
+  outline: none;
+}
+
+.productPoint__button span {
+  margin-right: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .productPoint {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+  .productPoint__warp {
+    width: 50%;
+  }
+  .productPoint__img {
+    width: 50%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-bottom: 30px;
+  }
+  .productPoint__img--title {
+    max-width: 70%;
+  }
+  .productPoint__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20px;
+    padding-top: 0px;
+  }
+}
+
+.specialFavor {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .specialFavor {
+    margin: 0 auto;
+  }
+  .specialFavor__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.offerList {
+  margin-bottom: 30px;
+}
+
+.offerList__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.offerList__link {
+  display: block;
+}
+
+.offerList__item {
+  width: 50%;
+}
+
+.offerList__item--wide {
+  width: 100%;
+}
+
+.offerList__img {
+  width: 100%;
+}
+
+.components {
+  padding-top: 3rem;
+  background: #f5f5f5;
+  padding-bottom: 60px;
+  margin-top: 60px;
+}
+
+.components-title {
+  -webkit-font-feature-settings: "palt" 1;
+  font-feature-settings: "palt" 1;
+  font-size: 1.5rem;
+  font-family: "Noto Sans JP", "游ゴシック体", YuGothic, Hiragino Sans, sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+.components-wrapper {
+  padding: 0 0.75rem;
+}
+
+.components-itemName {
+  margin-top: 30px;
+  color: #707070;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  .components-itemName {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+}
+
+.itemName-Flavor {
+  margin-top: 2rem;
+}
+
+.components-table {
+  margin-top: 1rem;
+  border: solid 1px #707070;
+  font-size: 0.875rem;
+  width: 100%;
+}
+
+.components-table tr {
+  background: 0 0;
+}
+
+.components-table tr:nth-child(even) {
+  background: 0 0;
+}
+
+.components-table th {
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
+  border-bottom: 1px dotted #707070;
+  color: #707070;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.components-table td {
+  display: block;
+  padding: 0.5rem;
+  border-bottom: 1px solid #707070;
+  color: #707070;
+  font-size: 0.8125rem;
+  font-weight: 300;
+}
+
+.components-table tr:last-child td {
+  border-bottom: none;
+}
+
+.components-trigger {
+  display: none;
+}
+
+@media (min-width: 760px) {
+  .comparison {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+  .comparison-Title {
+    font-size: 1.5rem;
+  }
+  .comparison-currentItemBtn {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .components-wrapper {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .components-table {
+    width: 100%;
+    font-size: 0.75rem;
+    table-layout: fixed;
+  }
+  .components-table th {
+    display: table-cell;
+    width: 140px;
+    font-size: 0.75rem;
+  }
+  .components-table td {
+    display: table-cell;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .components-unit {
+    position: relative;
+  }
+  .components-btn {
+    display: inline-block !important;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    padding: 0.5rem;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: solid 2px #707070;
+    border-radius: 25px;
+    background: #fefefe;
+    color: #707070;
+    font-size: 0.875rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  .components-btn::before {
+    content: "詳細を見る";
+  }
+  .components-cnt {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+  .components-cnt::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#fafaf5), to(rgba(250, 250, 245, 0)));
+    background: linear-gradient(0deg, #fafaf5, rgba(250, 250, 245, 0));
+    content: "";
+  }
+  .components-trigger:checked ~ .components-btn::before {
+    content: "閉じる";
+  }
+  .components-trigger:checked ~ .components-btn {
+    bottom: 2rem;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .components-trigger:checked ~ .components-cnt {
+    height: auto;
+    padding-bottom: 6rem;
+  }
+  .components-trigger:checked ~ .components-cnt::before {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

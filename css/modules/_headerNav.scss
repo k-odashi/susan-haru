@@ -1,0 +1,54 @@
+// ヘッダー
+
+.header {
+  width: 100%;
+
+  &--sticky {
+    position: fixed;
+    top: 0;
+    // ナビを一番上のレイヤーに表示
+    z-index: 10;
+  }
+}
+
+
+
+// ナビ
+
+.nav {
+  position: relative;
+  background-color: #fffde6;
+  font-weight: 500;
+
+  &__list {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: #dd5253;
+    font-size: 15px;
+
+    &--icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 8px;
+      padding: 4px;
+    }
+
+    &--anchor {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    width: 28px;
+  }
+}

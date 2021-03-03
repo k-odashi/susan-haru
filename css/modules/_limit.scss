@@ -1,0 +1,14 @@
+.limit {
+  margin-top: 40px;
+
+  &__text {
+    color: #cb0000;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__emphasis {
+    font-size: 30px;
+  }
+}

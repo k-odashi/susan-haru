@@ -1,0 +1,27 @@
+// sp用
+.hero {
+
+  margin-bottom: 20px;
+  &__img {
+    &--sp {
+      display: block;
+    }
+    &--pc {
+      display: none;
+    }
+  }
+}
+
+// PC用はあとで設定する
+@media screen and (min-width: 768px) {
+  .hero {
+    &__img {
+      &--sp {
+        display: none;
+      }
+      &--pc {
+        display: block;
+      }
+    }
+  }
+}
