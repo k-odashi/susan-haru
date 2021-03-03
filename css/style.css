@@ -15,23 +15,6 @@ ul {
 
 .accordion4__input {
   display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion4__input:checked {
-  /* 【「~」の説明】
-        「~」の意味は、後ろにある同じ階層の要素
-        今回だと、[accordion__input]がcheckedの状態の時、
-        同じ階層で、後ろにある[accordion__wrap]と
-        [accordion__label]にCSSを効かせることができる。
-  
-        Q：「~」が無かったらどうなる？
-        A：無い時の書き方は、↓のようになるが、
-        [accordion__input]の一階層下にCSSを効かせる。
-        という意味になってしまう。
-          -    &:checked{
-          -        .accordion__wrap{             
-        */
 }
 
 .accordion4__input:checked ~ .accordion4__wrap {
@@ -45,12 +28,6 @@ ul {
 .accordion4__input:checked ~ .accordion4__label::after {
   font-family: "Font Awesome 5 Free";
   content: "\f068";
-  /* font awesomeアイコンを使いたい時
-              https://fontawesome.com/icons/times?style=solid
-              ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-              font-familyも指定する必要あり。
-              Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-            */
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
@@ -93,23 +70,6 @@ ul {
 
 .accordion5__input {
   display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion5__input:checked {
-  /* 【「~」の説明】
-        「~」の意味は、後ろにある同じ階層の要素
-        今回だと、[accordion__input]がcheckedの状態の時、
-        同じ階層で、後ろにある[accordion__wrap]と
-        [accordion__label]にCSSを効かせることができる。
-  
-        Q：「~」が無かったらどうなる？
-        A：無い時の書き方は、↓のようになるが、
-        [accordion__input]の一階層下にCSSを効かせる。
-        という意味になってしまう。
-          -    &:checked{
-          -        .accordion__wrap{             
-        */
 }
 
 .accordion5__input:checked ~ .accordion5__wrap {
@@ -123,12 +83,6 @@ ul {
 .accordion5__input:checked ~ .accordion5__label::after {
   font-family: "Font Awesome 5 Free";
   content: "\f068";
-  /* font awesomeアイコンを使いたい時
-              https://fontawesome.com/icons/times?style=solid
-              ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-              font-familyも指定する必要あり。
-              Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-            */
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
@@ -171,23 +125,6 @@ ul {
 
 .accordion6__input {
   display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion6__input:checked {
-  /* 【「~」の説明】
-        「~」の意味は、後ろにある同じ階層の要素
-        今回だと、[accordion__input]がcheckedの状態の時、
-        同じ階層で、後ろにある[accordion__wrap]と
-        [accordion__label]にCSSを効かせることができる。
-  
-        Q：「~」が無かったらどうなる？
-        A：無い時の書き方は、↓のようになるが、
-        [accordion__input]の一階層下にCSSを効かせる。
-        という意味になってしまう。
-          -    &:checked{
-          -        .accordion__wrap{             
-        */
 }
 
 .accordion6__input:checked ~ .accordion6__wrap {
@@ -201,12 +138,6 @@ ul {
 .accordion6__input:checked ~ .accordion6__label::after {
   font-family: "Font Awesome 5 Free";
   content: "\f068";
-  /* font awesomeアイコンを使いたい時
-              https://fontawesome.com/icons/times?style=solid
-              ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-              font-familyも指定する必要あり。
-              Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-            */
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
@@ -249,23 +180,6 @@ ul {
 
 .accordion7__input {
   display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion7__input:checked {
-  /* 【「~」の説明】
-        「~」の意味は、後ろにある同じ階層の要素
-        今回だと、[accordion__input]がcheckedの状態の時、
-        同じ階層で、後ろにある[accordion__wrap]と
-        [accordion__label]にCSSを効かせることができる。
-  
-        Q：「~」が無かったらどうなる？
-        A：無い時の書き方は、↓のようになるが、
-        [accordion__input]の一階層下にCSSを効かせる。
-        という意味になってしまう。
-          -    &:checked{
-          -        .accordion__wrap{             
-        */
 }
 
 .accordion7__input:checked ~ .accordion7__wrap {
@@ -279,12 +193,6 @@ ul {
 .accordion7__input:checked ~ .accordion7__label::after {
   font-family: "Font Awesome 5 Free";
   content: "\f068";
-  /* font awesomeアイコンを使いたい時
-              https://fontawesome.com/icons/times?style=solid
-              ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-              font-familyも指定する必要あり。
-              Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-            */
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
