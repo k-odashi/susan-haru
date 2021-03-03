@@ -38,6 +38,9 @@
     border-radius: 30px;
     background-color: #FFFEF4;
     margin-bottom: 10px;
+    max-width: 300px;
+    margin: 10px auto;
+    margin-bottom: 20px;
 
     &::before {
       content: "商品の説明";
@@ -53,14 +56,6 @@
     }
   }
 }
-
-
-.accordion4__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-}
-
 
 .accordion5 {
   &__input {
@@ -102,6 +97,9 @@
     border-radius: 30px;
     background-color: #FFFEF4;
     margin-bottom: 10px;
+    max-width: 300px;
+    margin: 10px auto;
+    margin-bottom: 20px;
 
     &::before {
       content: "商品の説明";
@@ -117,14 +115,6 @@
     }
   }
 }
-
-
-.accordion5__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-}
-
 
 .accordion6 {
   &__input {
@@ -167,6 +157,9 @@
     border-radius: 30px;
     background-color: #FFFEF4;
     margin-bottom: 10px;
+    max-width: 300px;
+    margin: 10px auto;
+    margin-bottom: 20px;
 
     &::before {
       content: "商品の説明";
@@ -182,14 +175,6 @@
     }
   }
 }
-
-
-.accordion6__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-}
-
 
 .accordion7 {
   &__input {
@@ -231,6 +216,9 @@
     border-radius: 30px;
     background-color: #FFFEF4;
     margin-bottom: 10px;
+    max-width: 300px;
+    margin: 10px auto;
+    margin-bottom: 20px;
 
     &::before {
       content: "商品の説明";
@@ -245,10 +233,4 @@
       font-weight: 900;
     }
   }
-}
-
-.accordion7__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
 }

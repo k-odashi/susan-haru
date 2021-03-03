@@ -47,6 +47,9 @@ ul {
   border-radius: 30px;
   background-color: #FFFEF4;
   margin-bottom: 10px;
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
 }
 
 .accordion4__label::before {
@@ -60,12 +63,6 @@ ul {
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
-}
-
-.accordion4__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
 }
 
 .accordion5__input {
@@ -102,6 +99,9 @@ ul {
   border-radius: 30px;
   background-color: #FFFEF4;
   margin-bottom: 10px;
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
 }
 
 .accordion5__label::before {
@@ -115,12 +115,6 @@ ul {
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
-}
-
-.accordion5__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
 }
 
 .accordion6__input {
@@ -157,6 +151,9 @@ ul {
   border-radius: 30px;
   background-color: #FFFEF4;
   margin-bottom: 10px;
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
 }
 
 .accordion6__label::before {
@@ -170,12 +167,6 @@ ul {
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
-}
-
-.accordion6__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
 }
 
 .accordion7__input {
@@ -212,6 +203,9 @@ ul {
   border-radius: 30px;
   background-color: #FFFEF4;
   margin-bottom: 10px;
+  max-width: 300px;
+  margin: 10px auto;
+  margin-bottom: 20px;
 }
 
 .accordion7__label::before {
@@ -225,12 +219,6 @@ ul {
   padding-left: 8px;
   color: #b8b1cd;
   font-weight: 900;
-}
-
-.accordion7__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
 }
 
 .header {
