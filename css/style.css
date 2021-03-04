@@ -46,8 +46,8 @@ ul {
 }
 
 .accordion4__label::before {
-  content: "商品の説明";
   color: #dd5253;
+  content: "商品の説明";
 }
 
 .accordion4__label::after {
@@ -91,8 +91,8 @@ ul {
 }
 
 .accordion5__label::before {
-  content: "商品の説明";
   color: #dd5253;
+  content: "商品の説明";
 }
 
 .accordion5__label::after {
@@ -136,8 +136,8 @@ ul {
 }
 
 .accordion6__label::before {
-  content: "商品の説明";
   color: #dd5253;
+  content: "6番目";
 }
 
 .accordion6__label::after {
@@ -181,8 +181,8 @@ ul {
 }
 
 .accordion7__label::before {
-  content: "商品の説明";
   color: #dd5253;
+  content: "7番目";
 }
 
 .accordion7__label::after {
