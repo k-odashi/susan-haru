@@ -48,85 +48,26 @@
   }
 }
 
-.accordion {
-  $this: &;
-
-  &4{
-    &__input {
-      display: none;
+@for $i from 4 through 7 {
+  .accordion#{$i} {
+    $this: &;
   
-      &:checked {
-  
-        ~#{$this}4__wrap {
-          height: auto;
-        }
-  
-        ~#{$this}4__label {
-          @include accordion-checked-label;
-        }
-      }
-    }
-
-    @include accordion-wrap;
-    @include accordion-label;
-  }
-  
-  &5{
-    &__input {
-      display: none;
-  
-      &:checked {
-  
-        ~#{$this}5__wrap {
-          height: auto;
-        }
-  
-        ~#{$this}5__label {
-          @include accordion-checked-label;
+      &__input {
+        display: none;
+    
+        &:checked {
+    
+          ~#{$this}__wrap {
+            height: auto;
+          }
+    
+          ~#{$this}__label {
+            @include accordion-checked-label;
+          }
         }
       }
-    }
-
-    @include accordion-wrap;
-    @include accordion-label;
-  }
-
-  &6{
-    &__input {
-      display: none;
   
-      &:checked {
-  
-        ~#{$this}6__wrap {
-          height: auto;
-        }
-  
-        ~#{$this}6__label {
-          @include accordion-checked-label;
-        }
-      }
-    }
-
-    @include accordion-wrap;
-    @include accordion-label;
-  }
-
-  &7{
-    &__input {
-      display: none;
-  
-      &:checked {
-        ~#{$this}7__wrap {
-          height: auto;
-        }
-  
-        ~#{$this}7__label {
-          @include accordion-checked-label;
-        }
-      }
-    }
-
-    @include accordion-wrap;
-    @include accordion-label;
+      @include accordion-wrap;
+      @include accordion-label;
   }
 }
