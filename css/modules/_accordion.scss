@@ -5,6 +5,20 @@
   }
 }
 
+@mixin accordion-checked-label {
+  &::before {
+    content: "閉じる"
+  }
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f068";
+    padding-left: 8px;
+    color: #b8b1cd;
+    font-weight: 900;
+  }
+}
+
 .accordion4 {
   &__input {
     display: none;
@@ -16,17 +30,7 @@
       }
 
       ~.accordion4__label {
-        &::before {
-          content: "閉じる"
-        }
-
-        &::after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f068";
-          padding-left: 8px;
-          color: #b8b1cd;
-          font-weight: 900;
-        }
+        @include accordion-checked-label;
       }
     }
   }
@@ -72,17 +76,7 @@
       }
 
       ~.accordion5__label {
-        &::before {
-          content: "閉じる"
-        }
-
-        &::after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f068";
-          padding-left: 8px;
-          color: #b8b1cd;
-          font-weight: 900;
-        }
+        @include accordion-checked-label;
       }
     }
   }
@@ -128,18 +122,7 @@
       }
 
       ~.accordion6__label {
-        &::before {
-          content: "閉じる"
-        }
-
-        &::after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f068";
-          padding-left: 8px;
-          color: #b8b1cd;
-          font-weight: 900;
-
-        }
+        @include accordion-checked-label;
       }
     }
   }
@@ -184,18 +167,7 @@
       }
 
       ~.accordion7__label {
-        &::before {
-          content: "閉じる"
-        }
-
-        &::after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f068";
-          padding-left: 8px;
-          color: #b8b1cd;
-          font-weight: 900;
-
-        }
+        @include accordion-checked-label;
       }
     }
   }
