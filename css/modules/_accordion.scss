@@ -48,81 +48,83 @@
   }
 }
 
-.accordion4 {
-  &__input {
-    display: none;
-
-    &:checked {
-
-      ~.accordion4__wrap {
-        height: auto;
-      }
-
-      ~.accordion4__label {
-        @include accordion-checked-label;
-      }
-    }
-  }
-
-  @include accordion-wrap;
-  @include accordion-label;
-}
-
-.accordion5 {
-  &__input {
-    display: none;
-
-    &:checked {
-
-      ~.accordion5__wrap {
-        height: auto;
-      }
-
-      ~.accordion5__label {
-        @include accordion-checked-label;
+.accordion {
+  &4{
+    &__input {
+      display: none;
+  
+      &:checked {
+  
+        ~.accordion4__wrap {
+          height: auto;
+        }
+  
+        ~.accordion4__label {
+          @include accordion-checked-label;
+        }
       }
     }
+
+    @include accordion-wrap;
+    @include accordion-label;
   }
-
-  @include accordion-wrap;
-  @include accordion-label;
-}
-
-.accordion6 {
-  &__input {
-    display: none;
-
-    &:checked {
-
-      ~.accordion6__wrap {
-        height: auto;
-      }
-
-      ~.accordion6__label {
-        @include accordion-checked-label;
+  
+  &5{
+    &__input {
+      display: none;
+  
+      &:checked {
+  
+        ~.accordion5__wrap {
+          height: auto;
+        }
+  
+        ~.accordion5__label {
+          @include accordion-checked-label;
+        }
       }
     }
+    
+    @include accordion-wrap;
+    @include accordion-label;
   }
 
-  @include accordion-wrap;
-  @include accordion-label;
-}
-
-.accordion7 {
-  &__input {
-    display: none;
-
-    &:checked {
-      ~.accordion7__wrap {
-        height: auto;
-      }
-
-      ~.accordion7__label {
-        @include accordion-checked-label;
+  &6{
+    &__input {
+      display: none;
+  
+      &:checked {
+  
+        ~.accordion6__wrap {
+          height: auto;
+        }
+  
+        ~.accordion6__label {
+          @include accordion-checked-label;
+        }
       }
     }
+
+    @include accordion-wrap;
+    @include accordion-label;
   }
 
-  @include accordion-wrap;
-  @include accordion-label;
+  &7{
+    &__input {
+      display: none;
+  
+      &:checked {
+        ~.accordion7__wrap {
+          height: auto;
+        }
+  
+        ~.accordion7__label {
+          @include accordion-checked-label;
+        }
+      }
+    }
+
+    @include accordion-wrap;
+    @include accordion-label;
+  }
 }
