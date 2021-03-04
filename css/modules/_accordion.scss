@@ -49,17 +49,19 @@
 }
 
 .accordion {
+  $this: &;
+
   &4{
     &__input {
       display: none;
   
       &:checked {
   
-        ~.accordion4__wrap {
+        ~#{$this}4__wrap {
           height: auto;
         }
   
-        ~.accordion4__label {
+        ~#{$this}4__label {
           @include accordion-checked-label;
         }
       }
@@ -75,16 +77,16 @@
   
       &:checked {
   
-        ~.accordion5__wrap {
+        ~#{$this}5__wrap {
           height: auto;
         }
   
-        ~.accordion5__label {
+        ~#{$this}5__label {
           @include accordion-checked-label;
         }
       }
     }
-    
+
     @include accordion-wrap;
     @include accordion-label;
   }
@@ -95,11 +97,11 @@
   
       &:checked {
   
-        ~.accordion6__wrap {
+        ~#{$this}6__wrap {
           height: auto;
         }
   
-        ~.accordion6__label {
+        ~#{$this}6__label {
           @include accordion-checked-label;
         }
       }
@@ -114,11 +116,11 @@
       display: none;
   
       &:checked {
-        ~.accordion7__wrap {
+        ~#{$this}7__wrap {
           height: auto;
         }
   
-        ~.accordion7__label {
+        ~#{$this}7__label {
           @include accordion-checked-label;
         }
       }
