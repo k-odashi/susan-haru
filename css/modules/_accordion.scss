@@ -1,3 +1,10 @@
+@mixin accordion-wrap {
+  &__wrap{
+    overflow: hidden;
+    height: 0px;
+  }
+}
+
 .accordion4 {
   &__input {
     display: none;
@@ -24,10 +31,7 @@
     }
   }
 
-  &__wrap {
-    overflow: hidden;
-    height: 0px;
-  }
+  @include accordion-wrap;
 
   &__label {
     text-align: center;
@@ -83,10 +87,7 @@
     }
   }
 
-  &__wrap {
-    overflow: hidden;
-    height: 0px;
-  }
+  @include accordion-wrap;
 
   &__label {
     text-align: center;
@@ -143,10 +144,7 @@
     }
   }
 
-  &__wrap {
-    overflow: hidden;
-    height: 0px;
-  }
+  @include accordion-wrap;
 
   &__label {
     text-align: center;
@@ -202,10 +200,8 @@
     }
   }
 
-  &__wrap {
-    overflow: hidden;
-    height: 0px;
-  }
+  @include accordion-wrap;
+
 
   &__label {
     text-align: center;
