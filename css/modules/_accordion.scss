@@ -19,24 +19,7 @@
   }
 }
 
-.accordion4 {
-  &__input {
-    display: none;
-
-    &:checked {
-
-      ~.accordion4__wrap {
-        height: auto;
-      }
-
-      ~.accordion4__label {
-        @include accordion-checked-label;
-      }
-    }
-  }
-
-  @include accordion-wrap;
-
+@mixin accordion-label {
   &__label {
     text-align: center;
     display: block;
@@ -63,6 +46,26 @@
       font-weight: 900;
     }
   }
+}
+
+.accordion4 {
+  &__input {
+    display: none;
+
+    &:checked {
+
+      ~.accordion4__wrap {
+        height: auto;
+      }
+
+      ~.accordion4__label {
+        @include accordion-checked-label;
+      }
+    }
+  }
+
+  @include accordion-wrap;
+  @include accordion-label;
 }
 
 .accordion5 {
@@ -82,33 +85,7 @@
   }
 
   @include accordion-wrap;
-
-  &__label {
-    text-align: center;
-    display: block;
-    padding: 10px;
-    border: 1px solid;
-    border-color: #b8b1cd;
-    border-radius: 30px;
-    background-color: #FFFEF4;
-    margin-bottom: 10px;
-    max-width: 300px;
-    margin: 10px auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: "商品の説明";
-      color: #dd5253;
-    }
-
-    &::after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f067";
-      padding-left: 8px;
-      color: #b8b1cd;
-      font-weight: 900;
-    }
-  }
+  @include accordion-label;
 }
 
 .accordion6 {
@@ -128,33 +105,7 @@
   }
 
   @include accordion-wrap;
-
-  &__label {
-    text-align: center;
-    display: block;
-    padding: 10px;
-    border: 1px solid;
-    border-color: #b8b1cd;
-    border-radius: 30px;
-    background-color: #FFFEF4;
-    margin-bottom: 10px;
-    max-width: 300px;
-    margin: 10px auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: "商品の説明";
-      color: #dd5253;
-    }
-
-    &::after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f067";
-      padding-left: 8px;
-      color: #b8b1cd;
-      font-weight: 900;
-    }
-  }
+  @include accordion-label;
 }
 
 .accordion7 {
@@ -173,32 +124,5 @@
   }
 
   @include accordion-wrap;
-
-
-  &__label {
-    text-align: center;
-    display: block;
-    padding: 10px;
-    border: 1px solid;
-    border-color: #b8b1cd;
-    border-radius: 30px;
-    background-color: #FFFEF4;
-    margin-bottom: 10px;
-    max-width: 300px;
-    margin: 10px auto;
-    margin-bottom: 20px;
-
-    &::before {
-      content: "商品の説明";
-      color: #dd5253;
-    }
-
-    &::after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f067";
-      padding-left: 8px;
-      color: #b8b1cd;
-      font-weight: 900;
-    }
-  }
+  @include accordion-label;
 }
