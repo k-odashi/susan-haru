@@ -26,11 +26,7 @@ ul {
 }
 
 .accordion4__input:checked ~ .accordion4__label::after {
-  font-family: "Font Awesome 5 Free";
   content: "\f068";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
 }
 
 .accordion4__wrap {
@@ -42,14 +38,11 @@ ul {
   text-align: center;
   display: block;
   padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
+  border: 1px solid #b8b1cd;
   border-radius: 30px;
   background-color: #FFFEF4;
-  margin-bottom: 10px;
   max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
 }
 
 .accordion4__label::before {
@@ -78,11 +71,7 @@ ul {
 }
 
 .accordion5__input:checked ~ .accordion5__label::after {
-  font-family: "Font Awesome 5 Free";
   content: "\f068";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
 }
 
 .accordion5__wrap {
@@ -94,14 +83,11 @@ ul {
   text-align: center;
   display: block;
   padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
+  border: 1px solid #b8b1cd;
   border-radius: 30px;
   background-color: #FFFEF4;
-  margin-bottom: 10px;
   max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
 }
 
 .accordion5__label::before {
@@ -130,11 +116,7 @@ ul {
 }
 
 .accordion6__input:checked ~ .accordion6__label::after {
-  font-family: "Font Awesome 5 Free";
   content: "\f068";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
 }
 
 .accordion6__wrap {
@@ -146,14 +128,11 @@ ul {
   text-align: center;
   display: block;
   padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
+  border: 1px solid #b8b1cd;
   border-radius: 30px;
   background-color: #FFFEF4;
-  margin-bottom: 10px;
   max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
 }
 
 .accordion6__label::before {
@@ -182,11 +161,7 @@ ul {
 }
 
 .accordion7__input:checked ~ .accordion7__label::after {
-  font-family: "Font Awesome 5 Free";
   content: "\f068";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
 }
 
 .accordion7__wrap {
@@ -198,14 +173,11 @@ ul {
   text-align: center;
   display: block;
   padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
+  border: 1px solid #b8b1cd;
   border-radius: 30px;
   background-color: #FFFEF4;
-  margin-bottom: 10px;
   max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
 }
 
 .accordion7__label::before {
