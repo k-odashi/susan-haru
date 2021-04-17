@@ -13,6 +13,186 @@ ul {
   margin: 0;
 }
 
+.accordion4__input {
+  display: none;
+}
+
+.accordion4__input:checked ~ .accordion4__wrap {
+  height: auto;
+}
+
+.accordion4__input:checked ~ .accordion4__label::before {
+  content: "閉じる";
+}
+
+.accordion4__input:checked ~ .accordion4__label::after {
+  content: "\f068";
+}
+
+.accordion4__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion4__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  max-width: 300px;
+  margin: 10px auto 20px;
+}
+
+.accordion4__label::before {
+  color: #dd5253;
+  content: "商品の説明";
+}
+
+.accordion4__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion5__input {
+  display: none;
+}
+
+.accordion5__input:checked ~ .accordion5__wrap {
+  height: auto;
+}
+
+.accordion5__input:checked ~ .accordion5__label::before {
+  content: "閉じる";
+}
+
+.accordion5__input:checked ~ .accordion5__label::after {
+  content: "\f068";
+}
+
+.accordion5__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion5__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  max-width: 300px;
+  margin: 10px auto 20px;
+}
+
+.accordion5__label::before {
+  color: #dd5253;
+  content: "商品の説明";
+}
+
+.accordion5__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion6__input {
+  display: none;
+}
+
+.accordion6__input:checked ~ .accordion6__wrap {
+  height: auto;
+}
+
+.accordion6__input:checked ~ .accordion6__label::before {
+  content: "閉じる";
+}
+
+.accordion6__input:checked ~ .accordion6__label::after {
+  content: "\f068";
+}
+
+.accordion6__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion6__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  max-width: 300px;
+  margin: 10px auto 20px;
+}
+
+.accordion6__label::before {
+  color: #dd5253;
+  content: "6番目";
+}
+
+.accordion6__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
+.accordion7__input {
+  display: none;
+}
+
+.accordion7__input:checked ~ .accordion7__wrap {
+  height: auto;
+}
+
+.accordion7__input:checked ~ .accordion7__label::before {
+  content: "閉じる";
+}
+
+.accordion7__input:checked ~ .accordion7__label::after {
+  content: "\f068";
+}
+
+.accordion7__wrap {
+  overflow: hidden;
+  height: 0px;
+}
+
+.accordion7__label {
+  text-align: center;
+  display: block;
+  padding: 10px;
+  border: 1px solid #b8b1cd;
+  border-radius: 30px;
+  background-color: #FFFEF4;
+  max-width: 300px;
+  margin: 10px auto 20px;
+}
+
+.accordion7__label::before {
+  color: #dd5253;
+  content: "7番目";
+}
+
+.accordion7__label::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f067";
+  padding-left: 8px;
+  color: #b8b1cd;
+  font-weight: 900;
+}
+
 .header {
   width: 100%;
 }
@@ -451,360 +631,15 @@ ul {
   text-align: justify;
 }
 
-.accordion4__input {
-  display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion4__input:checked {
-  /* 【「~」の説明】
-      「~」の意味は、後ろにある同じ階層の要素
-      今回だと、[accordion__input]がcheckedの状態の時、
-      同じ階層で、後ろにある[accordion__wrap]と
-      [accordion__label]にCSSを効かせることができる。
-
-      Q：「~」が無かったらどうなる？
-      A：無い時の書き方は、↓のようになるが、
-      [accordion__input]の一階層下にCSSを効かせる。
-      という意味になってしまう。
-        -    &:checked{
-        -        .accordion__wrap{             
-      */
-}
-
-.accordion4__input:checked ~ .accordion4__wrap {
-  height: auto;
-}
-
-.accordion4__input:checked ~ .accordion4__label::before {
-  content: "閉じる";
-}
-
-.accordion4__input:checked ~ .accordion4__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f068";
-  /* font awesomeアイコンを使いたい時
-            https://fontawesome.com/icons/times?style=solid
-            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-            font-familyも指定する必要あり。
-            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-          */
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.accordion4__wrap {
-  overflow: hidden;
-  height: 0px;
-}
-
-.accordion4__label {
-  text-align: center;
-  display: block;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
-  border-radius: 30px;
-  background-color: #FFFEF4;
-  margin-bottom: 10px;
-}
-
-.accordion4__label::before {
-  content: "商品の説明";
-  color: #dd5253;
-}
-
-.accordion4__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f067";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.offer__accordion__top {
-  margin: 20px auto;
-  margin-bottom: 10px;
-}
-
 @media screen and (min-width: 768px) {
   .offer__accordion__top {
     max-width: 70%;
   }
 }
 
-.accordion4__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-}
-
-.accordion5__input {
-  display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion5__input:checked {
-  /* 【「~」の説明】
-      「~」の意味は、後ろにある同じ階層の要素
-      今回だと、[accordion__input]がcheckedの状態の時、
-      同じ階層で、後ろにある[accordion__wrap]と
-      [accordion__label]にCSSを効かせることができる。
-
-      Q：「~」が無かったらどうなる？
-      A：無い時の書き方は、↓のようになるが、
-      [accordion__input]の一階層下にCSSを効かせる。
-      という意味になってしまう。
-        -    &:checked{
-        -        .accordion__wrap{             
-      */
-}
-
-.accordion5__input:checked ~ .accordion5__wrap {
-  height: auto;
-}
-
-.accordion5__input:checked ~ .accordion5__label::before {
-  content: "閉じる";
-}
-
-.accordion5__input:checked ~ .accordion5__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f068";
-  /* font awesomeアイコンを使いたい時
-            https://fontawesome.com/icons/times?style=solid
-            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-            font-familyも指定する必要あり。
-            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-          */
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.accordion5__wrap {
-  overflow: hidden;
-  height: 0px;
-}
-
-.accordion5__label {
-  text-align: center;
-  display: block;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
-  border-radius: 30px;
-  background-color: #FFFEF4;
-  margin-bottom: 10px;
-}
-
-.accordion5__label::before {
-  content: "商品の説明";
-  color: #dd5253;
-}
-
-.accordion5__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f067";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
 .offer__accordion__top {
   margin: 20px auto;
   margin-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .offer__accordion__top {
-    max-width: 70%;
-  }
-}
-
-.accordion5__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-}
-
-.accordion6__input {
-  display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion6__input:checked {
-  /* 【「~」の説明】
-      「~」の意味は、後ろにある同じ階層の要素
-      今回だと、[accordion__input]がcheckedの状態の時、
-      同じ階層で、後ろにある[accordion__wrap]と
-      [accordion__label]にCSSを効かせることができる。
-
-      Q：「~」が無かったらどうなる？
-      A：無い時の書き方は、↓のようになるが、
-      [accordion__input]の一階層下にCSSを効かせる。
-      という意味になってしまう。
-        -    &:checked{
-        -        .accordion__wrap{             
-      */
-}
-
-.accordion6__input:checked ~ .accordion6__wrap {
-  height: auto;
-}
-
-.accordion6__input:checked ~ .accordion6__label::before {
-  content: "閉じる";
-}
-
-.accordion6__input:checked ~ .accordion6__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f068";
-  /* font awesomeアイコンを使いたい時
-            https://fontawesome.com/icons/times?style=solid
-            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-            font-familyも指定する必要あり。
-            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-          */
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.accordion6__wrap {
-  overflow: hidden;
-  height: 0px;
-}
-
-.accordion6__label {
-  text-align: center;
-  display: block;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
-  border-radius: 30px;
-  background-color: #FFFEF4;
-  margin-bottom: 10px;
-}
-
-.accordion6__label::before {
-  content: "商品の説明";
-  color: #dd5253;
-}
-
-.accordion6__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f067";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.offer__accordion__top {
-  margin: 20px auto;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .offer__accordion__top {
-    max-width: 70%;
-  }
-}
-
-.accordion6__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
-}
-
-.accordion7__input {
-  display: none;
-  /* inputタグがチェック状態になるとactiveになる */
-}
-
-.accordion7__input:checked {
-  /* 【「~」の説明】
-      「~」の意味は、後ろにある同じ階層の要素
-      今回だと、[accordion__input]がcheckedの状態の時、
-      同じ階層で、後ろにある[accordion__wrap]と
-      [accordion__label]にCSSを効かせることができる。
-
-      Q：「~」が無かったらどうなる？
-      A：無い時の書き方は、↓のようになるが、
-      [accordion__input]の一階層下にCSSを効かせる。
-      という意味になってしまう。
-        -    &:checked{
-        -        .accordion__wrap{             
-      */
-}
-
-.accordion7__input:checked ~ .accordion7__wrap {
-  height: auto;
-}
-
-.accordion7__input:checked ~ .accordion7__label::before {
-  content: "閉じる";
-}
-
-.accordion7__input:checked ~ .accordion7__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f068";
-  /* font awesomeアイコンを使いたい時
-            https://fontawesome.com/icons/times?style=solid
-            ↑ページなど公式ページから、Unicodeをコピペし、contentに入れる。
-            font-familyも指定する必要あり。
-            Unicodeの位置参考：https://digitalidentity.co.jp/blog/creative/font-awesome.html#CSS
-          */
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.accordion7__wrap {
-  overflow: hidden;
-  height: 0px;
-}
-
-.accordion7__label {
-  text-align: center;
-  display: block;
-  padding: 10px;
-  border: 1px solid;
-  border-color: #b8b1cd;
-  border-radius: 30px;
-  background-color: #FFFEF4;
-  margin-bottom: 10px;
-}
-
-.accordion7__label::before {
-  content: "商品の説明";
-  color: #dd5253;
-}
-
-.accordion7__label::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f067";
-  padding-left: 8px;
-  color: #b8b1cd;
-  font-weight: 900;
-}
-
-.offer__accordion__top {
-  margin: 20px auto;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .offer__accordion__top {
-    max-width: 70%;
-  }
-}
-
-.accordion7__label {
-  max-width: 300px;
-  margin: 10px auto;
-  margin-bottom: 20px;
 }
 
 .secret {
