@@ -1,5 +1,7 @@
 # susan-haru
 
-勉強用アカウント
+### 手順
 
-お題：リファクタリング
+- https://nodejs.org/ja/
+- npm install
+- npx gulp

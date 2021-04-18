@@ -1,0 +1,61 @@
+@for $i from 4 through 7 {
+  .accordion#{$i} {
+    $this: &;
+
+    &__input {
+      display: none;
+
+      &:checked {
+        ~ #{$this}__wrap {
+          height: auto;
+        }
+
+        ~ #{$this}__label {
+          &::before {
+            content: '閉じる';
+          }
+
+          &::after {
+            content: '\f068';
+          }
+        }
+      }
+    }
+
+    &__wrap {
+      overflow: hidden;
+      height: 0px;
+    }
+
+    &__label {
+      text-align: center;
+      display: block;
+      padding: 10px;
+      border: 1px solid #b8b1cd;
+      border-radius: 30px;
+      background-color: #fffef4;
+      max-width: 300px;
+      margin: 10px auto 20px;
+
+      &::before {
+        color: #dd5253;
+
+        @if $i==6 {
+          content: '6番目';
+        } @else if $i==7 {
+          content: '7番目';
+        } @else {
+          content: '商品の説明';
+        }
+      }
+
+      &::after {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f067';
+        padding-left: 8px;
+        color: #b8b1cd;
+        font-weight: 900;
+      }
+    }
+  }
+}
